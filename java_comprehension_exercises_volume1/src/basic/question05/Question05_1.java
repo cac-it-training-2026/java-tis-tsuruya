@@ -15,8 +15,7 @@ public class Question05_1 {
 		// TODO:ここに実装
 		System.out.println("年齢を入力してください。");
 		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-		String ageStr = reader.readLine();
-		int age = Integer.parseInt(ageStr);
+		int age = Integer.parseInt(reader.readLine());
 
 		if (age < 20) {
 			System.out.println("20歳未満なので、お酒の提供ができません。");

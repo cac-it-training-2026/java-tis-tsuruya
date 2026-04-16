@@ -17,8 +17,7 @@ public class Question04_2 {
 
 		System.out.println("４番目の人の年齢を入力してください。");
 		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-		String Age = reader.readLine();
-		int temporaryage = Integer.parseInt(Age);
+		int temporaryage = Integer.parseInt(reader.readLine());
 
 		ageGroup[3] = temporaryage;
 

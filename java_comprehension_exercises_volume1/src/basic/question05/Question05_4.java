@@ -15,17 +15,15 @@ public class Question05_4 {
 		// TODO:ここに実装
 		System.out.println("数学の試験結果の点数を入力してください。");
 		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-		String mathScore = reader.readLine();
-		int math = Integer.parseInt(mathScore);
+		int math = Integer.parseInt(reader.readLine());
 
 		System.out.println("国語の試験結果の点数を入力してください。");
-		String japaScore = reader.readLine();
-		int japa = Integer.parseInt(japaScore);
+		int japanese = Integer.parseInt(reader.readLine());
 
-		if (math >= 60 && japa >= 60) {
+		if (math >= 60 && japanese >= 60) {
 			System.out.println("数学と国語ともに合格です。");
 
-		} else if (math >= 60 || japa >= 60) {
+		} else if (math >= 60 || japanese >= 60) {
 			System.out.println("数学、国語どちらかが合格です。");
 
 		} else {
